@@ -1,0 +1,75 @@
+.p {
+    color: blueviolet;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/* untuk font kita bisa memilih dari google font > get font > get embed code. pilih yang web, karena kita menggunakan web. kita bisa salin ke link pada head*/
+
+h1 {
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+
+* {
+    margin: 5px;
+    /* margin untuk garis terluar  */
+
+    padding: 2px;
+    /* padding adalah garis setelah margin */
+
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(125, 226, 43);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.b2 {
+    background-color: rgb(239, 109, 10);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.par_coba {
+    font-family: "Bitcount Prop Double Ink", system-ui;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0,
+    "SZP1" 0,
+    "SZP2" 0,
+    "XPN1" 0,
+    "XPN2" 0,
+    "YPN1" 0,
+    "YPN2" 0;
+}
+
+.par_2 {
+    font-family: "Bitcount Prop Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
