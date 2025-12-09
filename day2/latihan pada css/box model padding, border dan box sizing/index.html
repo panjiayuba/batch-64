@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>padding, border dan box sizing</title>
+</head>
+<body>
+    <dt>margin
+        <dd>area transparan di sekitar kotak (diluar border)</dd>
+    </dt>
+    <dt>padding
+        <dd>area di sekitar konten (jarak antara konten dan border)</dd>
+    </dt>
+    <dt>border
+        <dd>area di sekitar konten dan padding  (garis tepi kotak)</dd>
+    </dt>
+    <dt>konten
+        <dd>konten sebenarnya di dalam box, bisa berupa teks atau gambar</dd>
+    </dt>
+    
+<h3>coba padding dan border</h3>
+    <div class="padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel reprehenderit odio ab iusto rerum hic aut accusamus tempora eum ipsam repudiandae, at voluptatem alias consequuntur earum dicta distinctio veritatis quibusdam.</div>
+    <p>padding: itu mempengaruhi ukuran box</p><hr>
+    
+    <p>border: batas di sekeliling konten </p>
+
+    <div class="border"><p><B>penulisan border</B>
+        <ul>ada 3 untuk mengatur
+            <li>border-width : untuk mengatur ketebalan border</li>
+            <li>border-style : untuk mengatur gaya border (solid, dotted, dashed, double, groove, ridge, inset, outset, none)</li>
+            <li>border-color : untuk mengatur warna border</li>
+        </ul> 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, quidem soluta, voluptate rem tempore omnis minima assumenda laborum, nihil expedita at possimus aliquid id pariatur! Placeat soluta debitis dignissimos quo?
+    </P>
+    </div><HR>
+
+<h3><STROng>BOX-SIZING</STROng></h3>
+    <p>jadi harus hati-hati, misalkan kita membuat sebuah kotak, lalu didalam nya dikasih sebuah padding dan border. maka dimensi kotak tersebut akan berubah ukuran nya sesuai ukuran tambahan dari pading atau bordernya. untuk mengatasi hal tersebut css punya properti khusus agar kita tidak perlu meng kalkulasi angka nya. properti tersebut dinamakan <b>box-sizing</b> </p>
+    <br>   
+    <LI>content-box : nilai default, dimana padding dan border akan menambah ukuran box</LI>
+    
+    <div class="box-sizing"><strong>kotak ini berisi nilai content-box</strong> <br><br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</div>
+    
+    <br><br>
+    <LI>border-box : padding dan border tidak akan menambah ukuran box, melainkan akan mengurangi ukuran konten didalam box agar ukuran total box tetap sama</LI>
+    
+    <div class="box-sizing2">
+        <p><strong>kotak ini berisi nilai border-box</strong><br><br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, illo dolor amet labore, sit illum quos ab quaerat nostrum sapiente vero deserunt a obcaecati culpa hic debitis delectus maiores non.</p>
+    </div>
+</body>
+</html>

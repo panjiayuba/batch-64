@@ -1,0 +1,72 @@
+.satu {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+/* jika saya menambahkan margin left, berarti saya menambahkan area disebelah kiri kotak. dan berlaku pada sisi lainya juga */
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+.dua {
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    margin-bottom: 15px;
+    
+}
+
+.tiga {
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+    margin-bottom: 15px;
+}
+/* jika ingin melihat ukuran box model tersebut kita bisa melakukan inspect pada browser, bisa chrome atau browser lain */
+/* jika kita menambahkan ukuran margin, misal bottom 100px, lalu content dibawahnya memiliki margin top 15px, maka margin nya tidak saling menambahkan menjadi total 65 px. margin tersebut mengambil nilai tertinggi bukan jumlah keduanya khusus yang vertikal */
+
+/* jika kita memiliki banyak div, kita hanya perlu memanggil beberapa saja, seperti berikut. dan jangan lupa memberika koma agar terbaca */
+.pertama, .kedua, .ketiga {
+    display: inline-block;
+
+}
+
+.pertama {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    margin-right: 30px;
+}
+
+.kedua  {
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    margin-left: 20px;}
+
+.ketiga{
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+}
+/* karena div .pertama dan .kedua menggunakan inlane block membuatnya vertikal, jadi ketika saya menambahkan 30px margin right pada div pertama, lalu pada div .kedua saya menambahkan 20 px margin left, ukuran nya akan bertambah bukan mengambil nilai terbesar */
+
+.one {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    margin-left: auto;
+    margin-right: auto;
+}
+.two {
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    margin-left: auto;
+    margin-right: auto;
+}
+.three {
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hero + Profile Card</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#e9eef2;
+      --panel:#ffffff;
+      --muted:#6b6b6b;
+      --accent:#0f1724; /* dark navy for buttons/icons */
+      --soft-shadow: 0 20px 40px rgba(11,18,25,0.07);
+      --card-shadow: 0 18px 40px rgba(11,18,25,0.12);
+      --radius:16px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:"Poppins",system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      background: linear-gradient(180deg, #f3f6f8 0%, var(--bg) 100%);
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:48px 20px;
+      color: #111827;
+    }
+
+    /* centered white panel */
+    .panel{
+      width: 100%;
+      max-width: 980px;
+      background: var(--panel);
+      border-radius: 10px;
+      padding:48px 64px;
+      box-shadow: var(--soft-shadow), inset 0 1px 0 rgba(255,255,255,0.6);
+      position:relative;
+      overflow:visible;
+    }
+
+    /* heading & content column */
+    .hero{
+      max-width:640px;
+      margin:0 auto;
+      text-align:left;
+    }
+
+    h1{
+      font-size:32px;
+      margin:0 0 18px 0;
+      font-weight:800;
+      letter-spacing: -0.02em;
+    }
+
+    p.lead{
+      color:var(--muted);
+      line-height:1.6;
+      font-weight:300;
+      margin:0 0 26px 0;
+    }
+
+    /* button row */
+    .controls{
+      display:flex;
+      align-items:center;
+      gap:22px;
+      margin-bottom:26px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:12px 26px;
+      border-radius:999px;
+      background:var(--accent);
+      color: #fff;
+      text-decoration:none;
+      font-weight:600;
+      box-shadow: 0 6px 18px rgba(15,23,36,0.12);
+      border: none;
+      cursor:pointer;
+      transition: transform .12s ease, box-shadow .12s ease;
+    }
+    .btn:active{transform:translateY(1px)}
+    .link-muted{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      color:var(--muted);
+      text-decoration:none;
+      font-weight:500;
+      font-size:15px;
+    }
+
+    /* social icons */
+    .socials{
+      display:flex;
+      gap:18px;
+      justify-content:center;
+      margin:28px 0 42px;
+    }
+    .socials a{
+      width:44px;
+      height:44px;
+      border-radius:50%;
+      display:inline-grid;
+      place-items:center;
+      background:#111;
+      color:white;
+      text-decoration:none;
+      box-shadow: 0 6px 18px rgba(11,18,25,0.08);
+      font-weight:600;
+    }
+
+    /* profile card centered below */
+    .profile-wrap{
+      display:flex;
+      justify-content:center;
+      position:relative;
+      margin-top:10px;
+    }
+
+    .profile-card{
+      width:320px;
+      border-radius:12px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.95), rgba(250,250,250,0.98));
+      box-shadow: var(--card-shadow);
+      overflow:hidden;
+      transform: translateY(8px);
+    }
+
+    .profile-image{
+      width:100%;
+      height:360px;
+      object-fit:cover;
+      display:block;
+      border-bottom:1px solid rgba(15,23,36,0.04);
+      background:linear-gradient(180deg,#ddd,#eee);
+    }
+
+    .profile-meta{
+      padding:16px 18px;
+      text-align:center;
+      background: #fafafa;
+    }
+
+    .profile-meta h3{
+      margin:6px 0 4px;
+      font-size:18px;
+      font-weight:700;
+    }
+    .profile-meta p{
+      margin:0;
+      color:var(--muted);
+      font-weight:500;
+      font-size:13px;
+    }
+
+    /* subtle big viewport shadow behind the panel to mimic design */
+    .panel::before{
+      content:"";
+      position:absolute;
+      inset: -26px -26px auto -26px;
+      height: 28px;
+      box-shadow: 0 30px 60px rgba(11,18,25,0.06);
+      border-radius: 12px;
+      pointer-events:none;
+      z-index:-1;
+    }
+
+    /* responsive */
+    @media (max-width:880px){
+      .panel{ padding:32px 28px; }
+      h1{ font-size:26px }
+      .profile-card{ width:280px }
+    }
+    @media (max-width:520px){
+      body{ padding:18px }
+      .panel{ padding:22px; border-radius:8px }
+      .hero{ max-width:100% }
+      .socials{ gap:12px }
+    }
+  </style>
+</head>
+<body>
+  <main class="panel" role="main" aria-label="hero">
+    <section class="hero">
+      <h1>Hi Welcome to my hut</h1>
+
+      <p class="lead">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique purus orci libero egestas ut.
+        Augue suspendisse blandit lorem massa ipsum, urna, egestas mi, lacinia. Dui fusce etiam libero, lectus amet.
+      </p>
+
+      <div class="controls">
+        <a class="btn" href="#contact">contact</a>
+        <a class="link-muted" href="#" aria-label="download cv">
+          download CV
+          <!-- small download icon -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="display:block">
+            <path d="M12 3v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 11l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21 21H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="socials" aria-hidden="false">
+        <a href="#" title="LinkedIn">in</a>
+        <a href="#" title="Instagram">ig</a>
+        <a href="#" title="Facebook">f</a>
+        <a href="#" title="Twitter">t</a>
+      </div>
+
+      <div class="profile-wrap">
+        <article class="profile-card" aria-label="profile">
+          <!-- ganti src dengan path foto anda -->
+          <img class="profile-image" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=..." alt="Foto profil">
+          <div class="profile-meta">
+            <h3>Rhoma Irama</h3>
+            <p>Fullstack Developer</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
