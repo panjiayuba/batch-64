@@ -1,0 +1,301 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* reset css  */
+/* css reset */
+/* reset css */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dcdcdc;
+    background-image: url(leaves.png);
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+    background-color: #dcdcdc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.header h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.header ul li {
+    background-color: salmon;
+    padding: 2px;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+ }
+
+.header a {
+    text-decoration: none;
+    color: black;
+}
+
+.header a:hover {
+    color: greenyellow;
+}
+
+.gambaratas {
+    height: 220px;
+    margin-top: 20px;
+    background-image: url(latihan.png);
+    background-position: 0 -180px;
+    border-top: 5px solid salmon;
+    border-bottom: 5px solid lightskyblue;
+}
+.main {
+    width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+    
+}
+
+.main h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px ;
+    margin-bottom: 5px;
+}
+
+.main .penulis {
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+.main a:hover {
+    color: greenyellow;
+    text-decoration: none;
+}
+
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    float: right;
+}
+.sidebar h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* agar paragraf mengelilingi image saya gunakan floth left pada img */
+.sidebar img {
+    height: 80px;
+    margin-bottom: 10px;
+    float: left;
+    margin-right: 10px;
+}
+
+.sidebar p {
+    font-size: 11px;
+    text-align: justify;
+    font-style: italic;
+    box-sizing: border-box;
+}
+.sidebar .icon i {
+    font-size: 24px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+
+
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #020202;
+    font-size: 14px;
+    color: white;
+}
+
+
+
+
+/* konten di bawah ini berisi pembersih untuk float */
+
+.cf::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* konten di atas untuk pembersih floath */
+
+
+/* berisi materi position : static dan relative */
+.pura-puranya-body {
+    width: 940px;
+    height: 400px;
+    background-color: white;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+.bungkus {
+    width: 700px;
+    height: 400px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.satu {
+    width: 80px;
+    height: 80px;
+    background-color: salmon;
+}
+
+.dua {
+    width: 80px;
+    height: 80px;
+    background-color: lightskyblue;
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+.tiga {
+    width: 80px;
+    height: 80px;
+    background-color: lightgreen;
+}
+
+
+.pointsatu {
+    width: 200px;
+    height: 400px;
+    background-color: rgb(246, 246, 144);
+    float: right; 
+}
+
+.pointsatu ol li {
+   text-align: center;
+   font-size: 10px;
+   margin-top: 5px;
+}
+
+
+/* rangkuman */
+.rangkuman {
+    margin-top: 20px;
+}
+.rangkuman h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.rangkuman b {
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* body contoh kedua dari materi position */
+.bodykedua {
+    width: 940px;
+    height: 400px;
+    background-color: white;
+    margin-top: 20px;
+    box-sizing: border-box; 
+}
+
+.bunkus-dua {
+    width: 700px;
+    height: 400px;
+    float: right;
+    box-sizing: border-box;
+}
+
+.empat {
+    width: 80px;
+    height: 80px;
+    background-color: salmon;
+}   
+.lima {
+    width: 80px;
+    height: 80px;
+    background-color: lightskyblue;
+    position: absolute ;
+    left: 30px; 
+    top: 30px;
+}
+.enam {
+    width: 80px;
+    height: 80px;
+    background-color: lightgreen;
+    left: 30px;
+}
+
+.catatan-kiri {
+    width: 200px;
+    height: 400px;
+    background-color: rgb(246, 246, 144);
+    float: left;
+}
+/* akhir dari materi position static dan relative */
+
+
+
+/* rangkuman position absolute dan fixed */
+.rangkumandua {
+    margin-top: 20px;
+}
+.rangkumandua h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.rangkumandua b {
+    font-weight: bold;
+}   

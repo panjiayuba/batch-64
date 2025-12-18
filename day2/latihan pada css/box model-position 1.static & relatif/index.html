@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>latihan float</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>SELAMAT DATANG</h1>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">product</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="gambaratas"></div>
+    
+<!-- untuk memberi conten flow saya gunakan micro clearfix (.cf) pada class content berfingsi untuk membersihkan floath yang di pasang pada css  -->
+        <div class="content cf">
+            <div class="main">
+                <h2>Judul Artikel</h2>
+                <p class="penulis">Dibuat oleh <a href="">Panji ayuba</a> Bengkulu, Desember 2025 </p><br><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita dignissimos tempora nemo omnis velit voluptatem architecto dicta ipsam facere doloremque, mollitia aperiam ipsum quidem exercitationem assumenda laudantium voluptatibus non! Ab ex odio natus illum iusto molestiae iste itaque voluptates commodi quas facere atque reiciendis magnam iure aliquid, maiores veritatis officiis numquam, corporis, dolorem voluptate minima hic sapiente. Sapiente iste ducimus ad earum commodi blanditiis laboriosam, porro et optio possimus exercitationem libero voluptatem dicta nesciunt, similique quae sed recusandae ex accusantium quibusdam facilis alias, minima rem ab. Dicta asperiores nesciunt veritatis repudiandae facere cum, eveniet eligendi odit modi? Pariatur, quasi delectus. Minus beatae optio nulla esse dolore laudantium adipisci, dolorem nemo atque sapiente corporis. Odit consequuntur, possimus atque harum rem in labore suscipit sint nesciunt nobis officiis, error modi enim maiores tempore vel, cumque corporis necessitatibus quam! Explicabo nam magnam, numquam nesciunt quam voluptatem sit est illo. Tempore tempora ullam assumenda eos veritatis quis dignissimos! Obcaecati earum quidem reprehenderit nulla excepturi soluta eos ipsum, voluptas doloribus nihil aliquam eius ut non. Vitae nobis placeat laudantium dolorem, expedita itaque temporibus quisquam repellat voluptate, esse eius recusandae neque excepturi facilis inventore voluptates. Atque voluptatum velit necessitatibus ipsa cumque quia debitis asperiores doloremque!</p>
+            </div>
+
+
+
+
+            <div class="sidebar">
+                <h3>Tentang penulis</h3>
+                <img src="fotoprofil.png" alt="panji ayuba">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit deleniti tenetur, voluptatibus earum tempore amet minima saepe ratione provident. Nostrum sequi veniam maiores officia repudiandae explicabo architecto facere molestias soluta impedit dolorem accusamus maxime ea quaerat velit blanditiis ratione, laboriosam assumenda iste vero ducimus nesciunt aliquam? Beatae architecto sunt iusto.</p>
+                <div class="icon">
+                    <a href="http//instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http//facebookk.com"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- berisi materi position : static dan relative -->
+        <div class="pura-puranya-body">
+            <div class="bungkus">
+                <div class="satu"></div>
+                <div class="dua"></div>
+                <div class="tiga"></div>
+            </div>
+            <div class="pointsatu">
+                <ol>
+                    <li>static: berarti untuk default</li>
+                    <li>relative: posisi yang bisa dipindahkan. posisi tersebut seperti sedang menaikan elem nya 1 dimensi keatas, jadi kita bisa menggerakannya kemana saja</li>
+                </ol>
+            </div>
+
+        </div>
+        
+        <!-- rangkuman materi position static -->
+        <div class="rangkuman">
+            <h2>Rangkuman position static dan relative</h2>
+            <br><br>
+            <p> <b>Position static</b> adalah posisi default dari sebuah elemen pada halaman web. Elemen dengan posisi static akan mengikuti alur normal dari dokumen HTML, artinya elemen tersebut akan ditempatkan sesuai dengan urutan kemunculannya dalam kode HTML. Elemen dengan posisi static tidak dapat dipindahkan menggunakan properti top, bottom, left, atau right.</p><br><br>
+            <!-- jika kita tika memberi properti position apapun maka posisi tersebut menjadi default STATIC -->
+            <p><b>Position relative</b> adalah posisi yang memungkinkan kita untuk memindahkan elemen relatif terhadap posisinya yang semula dalam alur normal dokumen. Ketika sebuah elemen diberi posisi relative, kita dapat menggunakan properti top, bottom, left, atau right untuk menggeser elemen tersebut dari posisinya semula tanpa mengubah alur dokumen. Elemen dengan posisi relative tetap mempertahankan ruang yang ditempatinya dalam alur dokumen, sehingga elemen lain di sekitarnya tidak akan terpengaruh oleh perubahan posisi tersebut.</p>
+
+        </div>
+
+
+
+        <!-- berisi materi position : absolut dan fixed -->
+        
+        <div class="bodykedua">   
+            <div class="bunkus-dua">
+                <div class="empat"></div>
+                <div class="lima"></div>
+                <div class="enam"></div>
+            </div>
+
+            <div class="catatan-kiri">
+                <ol>
+                    <li>absolut: ketika saya membuat posisi absolut pada kotak warna biru, sebenarnya kotak tersebut tidak hilang, tapi berada di belakang kotak warna hijau untuk melihatnya kita bisa menggeser terlebih dahulu posisinya agar terlihat. jadi ketika kita menggerakan elemen tersebut, kita bisa menggerakan dengan properti top, toght, bottom, left. lalu ruangan yang di tempati oleh elemen tersebut dianggap tidak ada. </li>
+                    <li></li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- rangkuman materi position absolut dan fixed -->
+        <div class="rangkumandua">
+            <h2>Rangkuman position absolut dan fixed</h2>
+            <br><br>
+            <p> <b>Position absolute</b> adalah posisi yang memungkinkan kita untuk menempatkan elemen secara tepat di dalam sebuah wadah (container) atau elemen induknya. Ketika sebuah elemen diberi posisi absolute, elemen tersebut akan dihapus dari alur normal dokumen dan dapat ditempatkan di mana saja di dalam wadahnya menggunakan properti top, bottom, left, atau right. Posisi elemen dengan posisi absolute dihitung relatif terhadap elemen induknya yang memiliki posisi selain static (misalnya relative, absolute, atau fixed).</p><br><br>
+            <p><b>Position fixed</b> adalah posisi yang memungkinkan kita untuk menempatkan elemen pada posisi tetap di layar, terlepas dari pergerakan halaman. Elemen dengan posisi fixed akan tetap terlihat di layar saat pengguna menggulir halaman ke atas atau ke bawah. Posisi elemen dengan posisi fixed dihitung relatif terhadap jendela tampilan (viewport) browser, sehingga elemen tersebut akan tetap berada di tempat yang sama meskipun halaman digulir.</p>
+        </div>
+
+        <div class="footer">
+            copyright &copy; 2025 | by panji ayuba
+        </div>
+    </div>
+
+    
+</body>
+</html>

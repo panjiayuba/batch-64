@@ -1,0 +1,97 @@
+body {
+    background-image: url(leaves.png);
+}
+
+.satu, .dua, .tiga {
+    width: 200px;
+    height: 200px;
+}
+.satu {
+    background-color: lightgreen;
+}
+
+.dua {
+    background-color: violet;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+.tiga {
+    background-color: gold;
+}
+
+
+
+/* parent */
+
+.parent {
+    width: 600px;
+    height: 650px;
+    border: 10px;
+    border-color: coral;
+    border-style: double; 
+    margin-top: 10px;
+    box-sizing: border-box;    
+    position: relative;     
+}
+.empat, .lima, .enam {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+
+.empat {
+    background-color: lightgreen;
+    box-sizing: border-box;
+}
+.lima {
+    background-color: violet;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.enam {
+    background-color: gold;
+    box-sizing: border-box;
+}
+
+/* contoh position fix */
+
+.tuju, .sembilan {
+    width: 200px;
+    height: 200px;
+}
+
+.tuju   {
+    background-color: lightgreen;
+    box-sizing: border-box;
+}
+
+.delapan {
+    background-color: violet;
+    box-sizing: border-box;
+    position: fixed;
+    height: 20px;
+    width: 100%;
+    top: 0;
+
+}
+
+.sembilan {
+    background-color: gold;
+    box-sizing: border-box;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 20px;
+}
+
+.konten-fixed {
+    font-size: 11px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin-top: auto;
+}

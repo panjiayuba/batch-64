@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>position absolute & fixed</title>
+</head>
+<body>
+    <h1>1. Posisi Absolute</h1>
+    <div class="container">
+        <div class="satu"></div>
+        <div class="dua"></div>
+        <div class="tiga"></div>
+    </div>
+
+    <div class="catatan">
+        
+        <p>absolute: posisi absolute pada warna violet, membuatnya lepas dari alur dokumen, sehingga menimpa warna gold. jadi warna gold sebenarnya tidak hilang tapi sembunyi atau berada di bawah warna violet. kenapa dia sembunyi? karena posisi absolute itu mengacu pada parent terdekat yang memiliki posisi relative, absolute, atau fixed. kalau tidak ada, dia akan mengacu pada body. jadi posisi absolute itu lepas dari alur dokumen.</p>
+        <p>ketika kita menggerakan elemen dengan posisi absolute kita bisa mengarahkan nya dengan top, right, bottom, left. ruang yang di tempati oleh elemen tersebut dianggap tidak ada </p>
+        <p>ketika kita gunakan top 50 px elemen tersebut akan naik keatas, kenapa. karena, ketika menggerakan elemen dengan posisi absolute, elemen tersebut relatif bergerak pada elemen perent-nya. untuk elemen perent yang ada pada contoh di ataas adalah body jadi dia bergerak mengikuti sang perent (BODY). jika di beri top 0px, lalu body nya 0px. maka dia mengikuti perent nya (body). karena dia tika punya element parent selain body</p>
+        
+    </div>
+
+    <div class="parent">
+       <div class="empat"></div>
+       <div class="lima"></div>
+       <div class="enam"></div>
+    </div>
+    <div class="catatandua">
+        <p>jika kita memberikan position absolute pada (.lima) lalu menggerakan top: 0; left: 0; maka dia akan berada di pojok kiri atas window browser. perilaku tersebut terjadi karena pembungkus container nya berada 1 dimensi dibawah .lima walaupun div parent merupakan parent dari .lima yang merupakan containernya. agar kotak pada .lima nyangkut atau bisa di tampung oleh sang container nya kita harus naikan div kontainer tersebut dengan posisi absolut juga. sang kontainer harus berada pada dimensi yang sama dengan dimensi (.lima)</p>
+        <p>untuk membuat containernya berada pada dimensi yang sama dengan .lima kita juga butuh bantuan dari position relative. untuk kita tau, position relative sama seperti absolute bisa membuat sebuah elemen keluar dari flow. maka kontainernya kita kasih falue non static. </p>
+        <p>seperti konsep absolute di atas. ketika kita menggerakan elemen dengan posisi absolute, elemen akan bergerak relative terhadap posisi dari elemen parent nya. lalu selama elemen parent nya memiliki posisi yang juga non-static. jika kita memberi properti top: 0; left: 0; maka elemen tersebut akan berada di ujung kiri atas dari elemen parent nya. </p>
+        <p>jadi, mungkin elemen kita bersarang berada di dalam div lain-div lain-div lain. kalau elemen nya di beri posisi absolute maka elemen nya akan mencari parent terdekatnya yang posisi nya non static</p>
+    </div>
+
+    <!-- posisi fixed  -->
+    <h1>2. Posisi fixed</h1>
+     <div class="contohfix">
+        <div class="tuju"></div>
+        <div class="delapan"><p class="konten-fixed">konten ini berisi position fixed 1</p></div>
+        <div class="sembilan"><p class="konten-fixed">2</p></div>
+     </div>
+
+     <div class="catatan-fixed">
+        <p>perilaku pada elemen fix adalah ketika kita menggunakan top, left, bottom, right maka elemen tersebut bergerak relative terhadap windows dan tidak memperdulikan parent nya, meskipun elemen parent-nya non static</p>
+        <p>ketika kita scroll halaman nya. elemen tersebut akan terkunci di posisi tersebut</p>
+     </div>
+</body>
+</html>
